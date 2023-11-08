@@ -1,5 +1,5 @@
 /* eslint-disable eslint-comments/no-unlimited-disable */
-/* eslint eslint-comments/no-unlimited-disable: error */
+// eslint-disable-next-line no-unused-vars, no-console
 /* eslint-disable */
 /* prettier-ignore */
 // @ts-nocheck
@@ -9,7 +9,20 @@ export { }
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AppProvider: typeof import('./../src/components/app-provider/index.vue')['default']
     HelloWorld: typeof import('./../src/components/HelloWorld.vue')['default']
+    NButton: typeof import('naive-ui')['NButton']
+    NConfigProvider: typeof import('naive-ui')['NConfigProvider']
+    NDialogProvider: typeof import('naive-ui')['NDialogProvider']
+    NLayout: typeof import('naive-ui')['NLayout']
+    NLayoutContent: typeof import('naive-ui')['NLayoutContent']
+    NLayoutFooter: typeof import('naive-ui')['NLayoutFooter']
+    NLayoutHeader: typeof import('naive-ui')['NLayoutHeader']
+    NLayoutSider: typeof import('naive-ui')['NLayoutSider']
+    NLoadingBarProvider: typeof import('naive-ui')['NLoadingBarProvider']
+    NMessageProvider: typeof import('naive-ui')['NMessageProvider']
+    NNotificationProvider: typeof import('naive-ui')['NNotificationProvider']
+    NSpace: typeof import('naive-ui')['NSpace']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

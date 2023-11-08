@@ -1,5 +1,5 @@
 /* eslint-disable eslint-comments/no-unlimited-disable */
-/* eslint eslint-comments/no-unlimited-disable: error */
+// eslint-disable-next-line no-unused-vars, no-console
 /* eslint-disable */
 /* prettier-ignore */
 // @ts-nocheck
@@ -129,6 +129,7 @@ declare global {
   const until: typeof import('@vueuse/core')['until']
   const useActiveElement: typeof import('@vueuse/core')['useActiveElement']
   const useAnimate: typeof import('@vueuse/core')['useAnimate']
+  const useAppStore: typeof import('../src/stores/app')['useAppStore']
   const useArrayDifference: typeof import('@vueuse/core')['useArrayDifference']
   const useArrayEvery: typeof import('@vueuse/core')['useArrayEvery']
   const useArrayFilter: typeof import('@vueuse/core')['useArrayFilter']

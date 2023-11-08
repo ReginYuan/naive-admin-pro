@@ -2,7 +2,9 @@
 </script>
 
 <template>
-  <div><h1>工作空间</h1></div>
+  <div>
+    <h1>工作空间</h1>
+  </div>
 </template>
 
 <style scoped>
